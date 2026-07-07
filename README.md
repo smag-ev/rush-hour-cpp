@@ -1,45 +1,65 @@
 # Rush Hour - C++ Taxi Game 🚕
 
-A complete C++ implementation of the classic sliding block puzzle game, **Rush Hour**, built for Linux environments. The objective is simple: drive the car around the grid, pick and drop the passengers, refuel and collect as many points as possible.
+A complete C++ implementation of the classic sliding-block puzzle game **Rush Hour**, built for Linux environments. The objective is simple: drive the taxi around the grid, pick up and drop off passengers, refuel when necessary, and earn as many points as possible.
 
 ## 🌟 Features
-* **Graphical User Interface:** Built using The C++ Template Image Processing Toolkit (CImg).
-* **Object-Oriented Design:** Clean and modular code using custom game classes.
-* **Audio Integration:** Includes background music and sound effects for an immersive experience.
-* **Classic Puzzle Mechanics:** Accurate grid movement and collision detection.
+
+- **Graphical User Interface:** Built using the **C++ Template Image Processing Toolkit (CImg)**.
+- **Object-Oriented Design:** Clean, modular, and maintainable code using custom game classes.
+- **Audio Integration:** Background music and sound effects for a more immersive experience.
+- **Classic Puzzle Mechanics:** Grid-based movement with accurate collision detection.
 
 ## 📂 Project Structure
-* `/GameClasses` - Contains the core object-oriented logic for the grid, vehicles, and game state.
-* `/Sound` - Audio files and sound management assets.
-* `CImg.h` - The core header file used for rendering the graphics and managing the display window[cite: 1].
-* `main.cpp` - The entry point of the game.
-* `Makefile` - The build automation script.
 
-## 🛠️ Prerequisites & Setup
+```
+.
+├── GameClasses/    # Core object-oriented game logic
+├── Sound/          # Audio files and sound assets
+├── CImg.h          # Graphics rendering library
+├── main.cpp        # Entry point of the game
+└── Makefile        # Build automation script
+```
 
-This project is configured to run on **Linux**. Before compiling, ensure you have the required development libraries installed.
+## 🛠️ Prerequisites
 
-### Installing Dependencies
-Run the following command in your terminal to install the necessary build tools and graphics libraries:
+This project is configured to run on **Linux**.
+
+Before compiling, install the required development tools and graphics libraries:
 
 ```bash
 sudo apt-get install make freeglut3-dev glew-utils libglew-dev libfreeimage-dev
+```
 
-## 🚀 How to Build and Run
+## 🚀 Build and Run
 
-Open your Linux terminal in the project root directory and run the following commands:
+Open a terminal in the project root directory.
 
 ### 1. Compile the Project
-To compile the source code and generate the executable file, execute:
+
+Build the source code and generate the executable:
+
 ```bash
 make
+```
 
 ### 2. Run the Game
-To launch the game directly via the Makefile after a successful build, execute:
+
+Launch the game after a successful build:
+
 ```bash
 make run
+```
 
 ### 3. Clean Build Files
-To delete the compiled binary and clean up your workspace, execute:
+
+Remove the compiled executable and other generated build files:
+
 ```bash
 make clean
+```
+
+## 📌 Notes
+
+- Developed for Linux using **GNU Make**.
+- Ensure all required dependencies are installed before building.
+- Audio assets must remain inside the `Sound/` directory for the game to function correctly.
